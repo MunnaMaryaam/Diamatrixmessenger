@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+}
+
+/* Zovril classic doodle background simulation with subtle geometric SVG pattern */
+.wa-chat-bg-default {
+  background-color: #efeae2;
+  background-image: radial-gradient(#d3c8b8 0.75px, transparent 0.75px), radial-gradient(#d3c8b8 0.75px, #efeae2 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.dark .wa-chat-bg-default {
+  background-color: #0b141a;
+  background-image: radial-gradient(#1f2c34 0.75px, transparent 0.75px), radial-gradient(#1f2c34 0.75px, #0b141a 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.wa-chat-bg-darkemerald {
+  background-color: #081e1a;
+  background-image: radial-gradient(#0f3830 0.8px, transparent 0.8px);
+  background-size: 24px 24px;
+}
+
+.wa-chat-bg-midnight {
+  background-color: #0d1117;
+  background-image: radial-gradient(#21262d 0.8px, transparent 0.8px);
+  background-size: 24px 24px;
+}
+
+.wa-chat-bg-softsand {
+  background-color: #f7f3ee;
+}
+
+/* Custom scrollbars like Zovril Web */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(134, 150, 160, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(134, 150, 160, 0.4);
+}

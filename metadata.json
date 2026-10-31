@@ -1,0 +1,11 @@
+{
+  "name": "Zovril",
+  "description": "Zovril is a modern, feature-rich messenger with real-time chats, audio/video calling, status stories, voice notes, media attachments, and Bengali language support.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
